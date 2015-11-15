@@ -25,7 +25,7 @@ gulp.task('compileSass', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/styles'))
-        //.pipe(notify({ message: 'Sass task complete' }))
+        .pipe(notify({ message: 'Sassed!' }))
         .pipe(browserSync.stream());
     
 });

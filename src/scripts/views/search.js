@@ -1,16 +1,29 @@
 var Backbone = require('backbone');
 var $ = require('jquery');
 var _ = require('underscore');
+var Books = require('../collections/books.js');
 
 var SearchView = Backbone.View.extend({
 
-    el: '#nytBooks',
+    el: '#search',
 
     events: {
         'submit' : 'search'
     },
 
-    initialize: function () {
+    initialize: function(options) {
+        if (options && options.router) {
+            this.router = options.router;
+        }
+
+        if (options && options.collection) {
+            this.collection = options.collection;
+        }
+
+        this.listenTo(this.collection, 'reset', function() {
+            console.log('reset books');
+        });
+
     },
 
     template: _.template(
@@ -18,12 +31,14 @@ var SearchView = Backbone.View.extend({
     ),
         
     render: function () {
-        this.$el.append(this.template());
+        this.$el.html(this.template());
     },
 
-    search: function() {
-debugger;
+    search: function(evt) {
         evt.preventDefault();        
+        var queryString = this.$el.find('form').serialize();
+
+        this.router.navigate('/results?' + queryString, { trigger: true, });
     },
 
 });
