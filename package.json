@@ -11,6 +11,8 @@
     "gulp-autoprefixer": "*",
     "gulp-jshint": "*",
     "gulp-rename": "*",
+    "gulp-plumber": "*",
+    "gulp-notify": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "vinyl-buffer": "*",

@@ -6,16 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>NYT Books</title>
         <link rel="stylesheet" href="dist/styles/style.css">
-
     </head>
     <body>
     
-        <div class="container">
+        <div id="nytBooks">
+        </div>
+    
+        <script type="text/template" id="nytBooksTemplate" charset="utf-8">
             <header class="branding">
                 <h1 class="branding__header">NYT Books</h1>
             </header>
-        
-            <div class="search">
+        </script>
+
+        <script type="text/template" id="nytBooksSearchTemplate" charset="utf-8">
+            <form class="search">
                 <h3 class="search__header">Search by</h3>
                 <div class="search__input">
                     <input type="text" name="author" id="author" placeholder="Author" />
@@ -23,10 +27,9 @@
                 <div class="search__input">
                     <input type="text" name="title" id="title" placeholder="Title" />
                 </div>
-                <button class="button" name="search">Search</button>
-            </div>
-        </div>
-    
+                <button class="submit" id="search" name="search">Search</button>
+            </form>
+        </script>
         <script src="dist/scripts/bundle.js"></script>
     </body>
 </html>
