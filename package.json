@@ -1,0 +1,19 @@
+{
+  "name": "nytbooks",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "*",
+    "jquery": "*",
+    "backbone": "*",
+    "browser-sync": "*",
+    "browserify": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-jshint": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*"
+    }
+}

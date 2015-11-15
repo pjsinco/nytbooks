@@ -1,0 +1,29 @@
+/* Colors */
+$verydark: #888;
+$blue: steelblue;
+$gray: #d0d0d0;
+$white: #fff;
+
+/* Typography */
+$primaryfont: sans-serif;
+$fontcolor: $verydark;
+$linkcolor: $blue;
+$bodylineheight: 1.4;
+$fontsizebase: 1.125em;
+
+/* Media queries */
+$all: 'all';
+$screen: 'screen';
+$small-start  : 20em; //  320px
+$medium-start : 20em; //  320px
+$large-start  : 48em; //  768px
+
+$sitewidth: 60em;
+
+/* susy */
+$gridpage: (
+  global-box-sizing: border-box,
+  columns: 12,
+  container: $sitewidth,
+  gutters: .25,
+);
