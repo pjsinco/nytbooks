@@ -30,16 +30,6 @@ var AppView = Backbone.View.extend({
         });
     },
 
-//    template: _.template(
-//        $('#nytBooksTemplate').html()
-//    ),
-//        
-//    render: function () {
-//        this.$el.html(this.template());
-//    },
-
-
-
 });
 
 module.exports = AppView;
